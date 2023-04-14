@@ -4,7 +4,122 @@
 @import 'libs';
 @import 'global';
 
+.header {
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    &__content-inner {
+        width: 505px;
+        margin: 240px 0;
+    }
+
+    &__content-title {
+        font-size: 55px;
+        line-height: 70px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__content-subtitle {
+        color: #CDCDCD;
+        margin-bottom: 43px;
+    }
+
+    &__content-link {
+        padding: 10px 24px;
+        background-color: #AE0F0F;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item-link {
+        line-height: 50px;
+        padding: 0 3px 10px;
+        color: #FFFFFF;
+        transition: all .7s;
+
+        &:hover {
+            border-bottom: 2px solid #AE0F0F;
+        }
+    }
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    &__info {
+        padding: 5px 10px 5px 5px;
+        background: #D9D9D9;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &__info-link {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 50px;
+        color: #AE0F0F;
+    }
+}
+
+.menu-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__bar {
+        display: block;
+        background: #FFFFFF;
+        height: 3px;
+        width: 35px;
+    }
+}
 
 
 
