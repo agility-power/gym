@@ -266,15 +266,8 @@
 }
 
 .trainers {
-
-    &__title-box {
-        width: 560px;
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    background-color: #F8F8F8;
+    padding: 100px 0;
 
     &__items {
         display: grid;
@@ -322,7 +315,10 @@
     }
 }
 
+.weekly {
+    padding: 100px 0;
 
+}
 
 
 
@@ -333,7 +329,44 @@
     gap: 17px;
 }
 
+.table {
+    background: #F8F8F8;
+    border: 1px solid rgba(174, 15, 15, 0.25);
+    margin: 0 auto;
 
+
+    &__td {
+        border: 1px solid rgba(174, 15, 15, 0.25);
+        padding: 0.3vmin;
+        width: 15vmin;
+        height: 5vmin;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 50px;
+        color: #000000;
+
+        span {
+            display: block;
+            font-weight: 400;
+            color: #E29235;
+        }
+
+        &:hover {
+            background-color: #E4E4E4;
+            cursor: pointer;
+        }
+
+        &:first-child {
+            width: 10vmin;
+            padding: 0.7vmin;
+        }
+    }
+
+    &__one {
+        color: #AE0F0F;
+    }
+}
 
 
 
