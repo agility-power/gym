@@ -368,7 +368,120 @@
     }
 }
 
+.footer {
 
+    &__top {
+        padding: 90px 0px 160px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__logo-text {
+        width: 340px;
+        margin: 7px 0 23px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border: 1px solid #C0C0C0;
+        border-radius: 4px;
+        transition: all .7s;
+
+        path {
+            fill: #00B2FF;
+        }
+    }
+
+    &__social-link:hover {
+        path {
+            fill: #E12727;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 100px;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: #484848;
+        position: relative;
+        margin-bottom: 15px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 2px;
+            background-color: #AE0F0F;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__item-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__list-item {
+        max-width: 140px;
+    }
+
+    &__adress {
+        margin-bottom: 15px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__phone {
+        font-weight: 600;
+        padding: 3px 0 3px 17px;
+        color: #AE0F0F;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/phone.svg');
+            bottom: 7px;
+            left: 0;
+            width: 16.5px;
+            height: 17px;
+        }
+    }
+
+    &__email {
+        display: block;
+        color: #0094FF;
+    }
+
+    &__bottom {
+        background-color: #121111;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.045em;
+        color: #FFFFFF;
+    }
+}
 
 
 
