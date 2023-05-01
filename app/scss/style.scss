@@ -368,6 +368,70 @@
     }
 }
 
+.calculate {
+    &__form-radio {
+        @extend%radio-hidden;
+
+        &:checked {
+            &+.calculate__radiochekbox {
+                span {
+                    background-color: #E12727;
+                }
+            }
+        }
+    }
+
+    &__radiochekbox {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #121111;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        span {
+            position: absolute;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #B1B1B1;
+        }
+
+    }
+}
+
+.fitness-consultant {
+    background-image: url('../images/consultant-bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 155px 0 184px;
+
+    &__title {
+        @extend%audiowide;
+        font-size: 45px;
+        line-height: 55px;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+    }
+
+    &__phone {
+        font-size: 30px;
+        line-height: 55px;
+        color: #fff;
+
+        span {
+            color: #AE0F0F;
+        }
+    }
+
+}
+
 .footer {
 
     &__top {
@@ -482,8 +546,5 @@
         color: #FFFFFF;
     }
 }
-
-
-
 
 @import 'media';
