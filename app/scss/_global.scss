@@ -50,6 +50,10 @@ body {
     &__text {
         color: #9E9E9E;
         margin-bottom: 24px;
+
+        span {
+            color: #484848;
+        }
     }
 
     &__box {
